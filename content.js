@@ -4,7 +4,7 @@ async function handleClick(e)
 {
     if (e.ctrlKey)
     {
-        let curTab = await chrome.tabs.getCurrent();
-        chrome.runtime.sendMessage({"tabid": curTab});
+        console.log("clicked!");
+        chrome.runtime.sendMessage({});
     }
 }
